@@ -1,0 +1,60 @@
+numpad {
+    display: grid;
+    grid-template-columns: repeat(3, lfr);
+    gap: 8px;
+    width: flex;
+    height: flex;
+    text-align: center;
+    padding: 8px;
+}
+
+operacoes{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: flex;
+    height: flex;
+    text-align: center;
+    padding: 8px;
+    background-color: red;
+}
+
+button{
+    width: 64px;
+    height: 64px;
+    color: black;
+    text-align: center;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    justify-self: center;
+}
+
+tela{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: flex;
+    height: 64px;
+    color: black;
+    text-align: right;
+    padding: 8px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: lightgray;
+}
+
+div {
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
