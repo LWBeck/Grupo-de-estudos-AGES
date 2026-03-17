@@ -13,6 +13,23 @@
   
 }
 
+#operacoes{
+  display: grid;
+  gap: 10px;
+  grid-template: repeat(1, 1fr);
+  grid-auto-flow: row;
+}
+
+#tela{
+    display: block;
+    width: 200;
+    height: 64;
+    border: 1px;
+    border-color: black;
+    padding: 10px;
+    font-size: xx-large;
+}
+
 button{
   background-color: #8ca0ff;
   width: 56px;
@@ -20,10 +37,4 @@ button{
 }
 
 
-#operacoes{
-  display: grid;
-  gap: 10px;
-  grid-template: repeat(1, 1fr);
-  grid-auto-flow: row;
-}
 
