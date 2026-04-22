@@ -1,0 +1,21 @@
+url se refere a url usada no meu site e não das api utilizadas
+
+[input disabled/id do album] (preenchimento automático => sequencialmente baseado na qtd de álbuns já registrados)
+[input/nome do álbum]
+[input/artista]
+[input/tracklist]
+[input/data]
+
+1) digita um álbum e clica no search | (url = ./search/{query})
+	é feito uma call para a api modo search da musicbrainz com termos {query} da url 
+	api retorna uma lista de objetos album
+	uma lista de álbuns é mostrada no browser com um <select>
+
+2) clica no álbum desejado | (url = ./search/{query})
+	o atributo id do álbum no index selecionado é copiado
+	é feito uma call para a api modo get álbum da musicbrainz com o id copiado
+	o nome, artista, tracklist e data do álbum é preenchido nos respectivos campos
+
+3) clica em submit | (url = ./album)
+	os campos são copiados para o request body
+	é feito um POST com a request e o álbum é adicionado ao banco de dados
